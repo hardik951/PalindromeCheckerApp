@@ -1,24 +1,28 @@
 import java.util.Scanner;
 
-public class PalindromeCheckerApp {
+public class PalindromeCheckerApp
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter a string: ");
         String input = sc.nextLine();
 
-        // Convert string to char array
+
         char[] arr = input.toCharArray();
 
         int start = 0;
         int end = arr.length - 1;
         boolean isPalindrome = true;
 
-        // Two pointer method
-        while (start < end) {
-            if (arr[start] != arr[end]) {
+
+        while (start < end)
+        {
+            if (arr[start] != arr[end])
+            {
                 isPalindrome = false;
                 break;
             }
